@@ -1,0 +1,56 @@
+<div class="home">
+  <div class="home-cour">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a routerLink="/detail/3">
+            <img src="../../../assets/img/acer-3.webp" class="d-block w-100" alt="...">
+          </a>
+        </div>
+        <div class="carousel-item active">
+         <a routerLink="/detail/3">
+          <img src="../../../assets/img/acer-5.webp" class="d-block w-100" alt="...">
+         </a>
+        </div>
+        <div class="carousel-item active">
+          <a routerLink="/detail/3">
+          <img src="../../../assets/img/acer.webp" class="d-block w-100" alt="...">
+          </a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="product-list mt-2 p-3">
+    <div class="popular mt-2">Popular products</div>
+    <div class="row">
+      <div class="col-sm-3" *ngFor="let item of homeProducts">
+        <div class="product-item">
+          <a routerLink="/detail/{{item.id}}">
+            <img src="{{item.image}}" alt="">
+          </a>
+        <div class="product-details">
+          <h6 class="name-head">{{item.name}}</h6>
+          <div class="product-price">
+            <h6>Price:{{item.price}}</h6>
+          </div>
+          <div class="product-color">
+            <h6>Color:{{item.color}}</h6>
+          </div>
+        </div>
+        <div class="product-footer">
+          <button class="but"><a routerLink="/detail/{{item.id}}">View Details</a></button>
+          <button class="but"><a routerLink="/checkout">Buy now</a></button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

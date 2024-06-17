@@ -1,0 +1,25 @@
+<nav class="navbar">
+  <div class="navbar-brand text-white f-16">E-com.in</div>
+  <div class="navbar-search">
+    <input type="text" placeholder="Search" #searchInput>
+    <div class="search-div" (click)="submitSearch(searchInput.value)">
+      <img src="../../../assets/img/search.svg" width="20px">
+    </div>
+  </div>
+  <div class="navbar-buttons">
+    <button class="nav-button"><a routerLink="home">Home</a></button>
+    <button class="nav-button"><a routerLink="cart"> Cart({{cartData}})</a></button>
+    <button class="nav-button" *ngIf="!logout"><a routerLink="login"> Login/Signup</a></button>
+    <button class="nav-button" *ngIf="logout" (click)="goLogout()"> Logout</button>
+  </div>
+  <button class="navbar-toggler" (click)="toggleNavbar()">☰</button>
+</nav>
+<div class="navbar-collapse" *ngIf="isNavbarCollapsed">
+  <div class="navbar-button">
+    <button class="nav-button"><a routerLink="home">Home</a></button>
+    <button class="nav-button cart-button"><a routerLink="cart"> Cart({{cartData}})</a></button>
+    <!-- <button class="nav-button "><a routerLink="login"> Login/Signup</a></button> -->
+    <button class="nav-button" *ngIf="!logout"><a routerLink="login"> Login/Signup</a></button>
+    <button class="nav-button" *ngIf="logout" (click)="goLogout()"> Logout</button>
+  </div>
+</div>

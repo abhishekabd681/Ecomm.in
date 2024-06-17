@@ -1,0 +1,34 @@
+.form-section {
+  width: 30vw;
+  /* height: 38vh; */
+  background-color: #3F444D;
+  border: 1px solid #3F444D;
+  border-radius: 20px;
+}
+.sign-button{
+  width: 100%;
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+.input-section{
+  width:100%;
+  background-color: aqua;
+}
+.account {
+  margin-left:20%;
+}
+label{
+  color:aliceblue !important;
+}
+@media (max-width: 768px) {
+  .form-section {
+    width: 90vw;
+    /* height: 32vh; */
+    background-color: #3F444D;
+  }
+  .account {
+    margin-left:15%;
+  }
+}
