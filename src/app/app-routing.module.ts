@@ -25,7 +25,6 @@ const routes: Routes = [{
 {
   path: 'search/:query',
   component : SearchbarComponent,
-  canActivate: [authGuard]
 },
 {
   path: 'detail/:productId',
