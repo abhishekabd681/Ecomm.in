@@ -30,7 +30,6 @@ const routes: Routes = [{
 {
   path: 'detail/:productId',
   component : ProductdetailsComponent,
-  canActivate: [authGuard]
 },
 {
   path: 'login',
