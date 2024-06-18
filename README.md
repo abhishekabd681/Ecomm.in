@@ -12,7 +12,7 @@ To run the Ecommerce App locally, follow these steps:
 2. Navigate to the project directory.
 3. Install dependencies by running `npm install`.
 4. So for this project we are using the json srever for the backened and api so we have to start the server also. 
-5. First open terminal and start the json server with this command `json-server --watch db.json`.
+5. First open terminal and start the json server with this command `npx json-server --watch db.json`.
 6. In another terminal start the development server with `ng s`.
 7. Open your web browser and visit `http://localhost:4200` to view the app.
 
